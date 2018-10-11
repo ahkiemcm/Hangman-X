@@ -14,7 +14,12 @@ console.log('Working')
 //Create conditionals that specify the rules of the game
 
     //Player chooses a letter > If letter is correct, print letter to form
+    //Animate: Megaman shoots :D
+    //If 2nd correct in a row, shoot then charge
+    //If 3rd correct in a row, fire a charged blast--reset
+    //If letter fills more than one spot, animate: Megaman jump shot + shoot on land
     // > If not, remove portion of health bar to symbolize a chance lost. 
+        //Health bar will consist of 5 different images, each with subsequently less health
     //> Player chooses another letter. Is there a loop we can do to make this more DRY?
 
     //If player guesses wrong 5 times, player loses (cue animation or image for game lose)
@@ -25,3 +30,6 @@ console.log('Working')
 
 // Store categories and word choices in arrays. 
 // Make a smart randomizer.
+
+//Somehow we need to check if the letter belongs in the word
+//If letter belongs in word, 
