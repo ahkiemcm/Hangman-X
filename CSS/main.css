@@ -1,3 +1,7 @@
+body {
+background-image: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png);
+}
+
 .mega-sprite {
     /* background-color: red; */
     width: 144px;
