@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hang Man X</title>
     <link rel="stylesheet" href="/CSS/main.css">
 </head>
 
@@ -24,26 +24,26 @@ we are going to need either a div or a section to target -->
             <!-- Image in CSS -->
         </div>
 
-        <h2 id='start-game'> Start Game</h2>
-        <!--Onclick: reveal list-->
-        <ul>
-            <li>Categories</li>
+        <div class="game-start">
+            <h2 id='start-game'> Start Game</h2>
+            <!--Onclick: reveal list-->
             <ul>
-                <li>Megaman</li>
+                <li>Categories</li>
+                <ul>
+                    <li>Megaman</li>
+                </ul>
+                <li>Random</li>
             </ul>
-            <li>Random</li>
-        </ul>
+        </div>
     </div>
 
     <div id="sigma-walk">
-        <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk">
-        <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk">
-        <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk">
+        <!-- <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk"> -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde fugiat magni consectetur veniam.</p>
     </div>
 
     <div id="sigma-challenge">
-        <img src="/HANGMAN-IMG/SigmaChallenge.jpg" alt="sigma-challenge">
+        <!-- <img src="/HANGMAN-IMG/SigmaChallenge.jpg" alt="sigma-challenge"> -->
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illum optio quod dignissimos repudiandae.</p>
     </div>
 
@@ -51,15 +51,26 @@ we are going to need either a div or a section to target -->
         <!-- Image in CSS -->
         <div class="game-display">
             <img src="/HANGMAN-IMG/megaman-healthbar-full.png" alt="full-health">
-            <form action="">
-
-                <input type="text">
+            
+            <form>
+                <input itype="text">
             </form>
-            <img src="/HANGMAN-IMG/YOU-LOSE.png" alt="you-lose">
-            <img src="/HANGMAN-IMG/YOU-WIN.png" alt="you-win">
+
+            <img src="/HANGMAN-IMG/YOU-LOSE.png" alt="you-lose" id="you-lose">
+            <img src="/HANGMAN-IMG/YOU-WIN.png" alt="you-win" id="you-win">
+        </div>
+
+        <div class="sprite-act" id="megaman">
+
+        </div>
+
+        <div class="sprite-act" id="sigma">
+
         </div>
     </div>
-<img src="/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png" alt="megaman" id="megaman"><img src="/HANGMAN-IMG/Sigma-cloak-on.png" alt="sigma" id="">
+
+
+
 
     <script src="/JS/app.js"></script>
 </body>

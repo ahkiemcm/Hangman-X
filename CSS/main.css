@@ -1,9 +1,18 @@
-.title-page {
-    background-image: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png);
-    color: #ffffff;
+body {
+    justify-content: center;
 }
 
+.title-page {
+    background: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png) no-repeat;
+    color: #ffffff;
+    width: cover;
+    height: 720px;
+}
 
+#sigma-walk {
+    background-color: black;
+    background: url(/HANGMAN-IMG/SigmaWALK.png) no-repeat;
+}
 
 #hang-man-x {
     background-color: transparent;
@@ -14,22 +23,33 @@
     color: #eed06f;
 }
 
-
-
 .mega-sprite {
     /* background-color: red; */
     width: 144px;
     height: 162px;
     /* border: solid black; */
-    background-image: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png)
+    background: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
 }
 
-#input {
-    height: 50px;
+#pr
+
+input {
+    height: 300px;
     width: 200px;
     border: none;
 }
 
 .game-page {
-    background-image: url(/HANGMAN-IMG/destroyed-city.png)
+    background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
+    /* display: none; */
+    width: cover;
+    height: 720px;
+}
+
+#megaman {
+    background-image: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
+}
+
+#sigma {
+    background-image: url(/HANGMAN-IMG/Sigma-cloak-on.png);
 }
