@@ -1,6 +1,20 @@
-body {
-background-image: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png);
+.title-page {
+    background-image: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png);
+    color: #ffffff;
 }
+
+
+
+#hang-man-x {
+    background-color: transparent;
+}
+
+#start-game:hover {
+    transition: .5s;
+    color: #eed06f;
+}
+
+
 
 .mega-sprite {
     /* background-color: red; */
@@ -16,3 +30,6 @@ background-image: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png);
     border: none;
 }
 
+.game-page {
+    background-image: url(/HANGMAN-IMG/destroyed-city.png)
+}
