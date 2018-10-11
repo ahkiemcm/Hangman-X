@@ -1,0 +1,12 @@
+.sprite {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border: solid black;
+}
+
+#input {
+    height: 50px;
+    width: 200px;
+    border: none;
+}
