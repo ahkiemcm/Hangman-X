@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +14,41 @@
 
 <!-- Now if I'm not mistaken, if we want to hide our pages as a portion of the same html file
 we are going to need either a div or a section to target -->
+
 <body>
-<div class="sprite"></div>
-<div class="sprite"></div>
-<div class="sprite"></div>
+    <!-- Title at top of page -->
+    <div class="title-page">
+        <img id="Hang-Man-X" src="/HANGMAN-IMG/Hang-Man-X.png" alt="Hangman X">
 
-<form>
-<input type="text" id="input">
-</form>
+        <div class="mega-sprite">
+        </div>
+        <h2 id='start-game'> Start Game</h2>
+        <!--Onclick: reveal list-->
+        <ul>
+            <li>Categories</li>
+            <ul>
+                <li>Megaman</li>
+            </ul>
+            <li>Random</li>
+        </ul>
+    </div>
 
-    
+    <div id="sigma-walk">
+        <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk">
+        <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk">
+        <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde fugiat magni consectetur veniam.</p>
+    </div>
+
+    <div id="sigma-challenge">
+        <img src="/HANGMAN-IMG/SigmaChallenge.jpg" alt="sigma-challenge">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illum optio quod dignissimos repudiandae.</p>
+    </div>
+
+
+
+
     <script src="/JS/app.js"></script>
 </body>
+
 </html>

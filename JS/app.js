@@ -17,7 +17,7 @@ console.log('Working')
     //Animate: Megaman shoots :D
     //If 2nd correct in a row, shoot then charge
     //If 3rd correct in a row, fire a charged blast--reset
-    //If letter fills more than one spot, animate: Megaman jump shot + shoot on land
+    //If letter fills more than one spot, animate: Megaman jump shot + shoot on landq
     // > If not, remove portion of health bar to symbolize a chance lost. 
         //Health bar will consist of 5 different images, each with subsequently less health
     //> Player chooses another letter. Is there a loop we can do to make this more DRY?

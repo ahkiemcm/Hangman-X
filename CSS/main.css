@@ -1,8 +1,9 @@
-.sprite {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-    border: solid black;
+.mega-sprite {
+    /* background-color: red; */
+    width: 144px;
+    height: 162px;
+    /* border: solid black; */
+    background-image: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png)
 }
 
 #input {
@@ -10,3 +11,4 @@
     width: 200px;
     border: none;
 }
+
