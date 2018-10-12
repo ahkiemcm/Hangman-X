@@ -2,6 +2,8 @@ body {
     background-color: black;
 }
 
+/* TITLE PAGE */
+
 .title-page {
     background: url(/HANGMAN-IMG/mega-man-x-hd-wallpaper.png) no-repeat;
     color: #ffffff;
@@ -14,9 +16,23 @@ body {
     background-color: transparent;
 }
 
+.game-start {
+    font-family: 'press start 2p';
+}
+
 #start-game:hover {
     transition: .5s;
     color: #eed06f;
+
+}
+
+.game-start li:hover {
+    transition: .5s;
+    color: #eed06f;
+}
+
+.game-select li {
+    display: none;
 }
 
 .mega-sprite {
@@ -26,6 +42,8 @@ body {
     /* border: solid black; */
     background: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
 }
+
+/* STORY FRAGMENTS */
 
 .sigma-monologue {
     background: black;
@@ -38,6 +56,7 @@ body {
     height: 408px;
     color: #ffffff;
     display: none;
+    font-family: 'press start 2p'
 }
 
 #sigma-challenge {
@@ -47,13 +66,16 @@ body {
     height: 463px;
     color: #ffffff;
     display: none;
+    font-family: 'press start 2p'
 }
+
+/* GAME PAGE */
 
 .game-page {
     background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
-    display: none;
     width: cover;
     height: 720px;
+    display: none;
 }
 
 #health-bar {
@@ -88,10 +110,12 @@ body {
 
 #you-lose {
     display: none;
+    font-family: 'press start 2p'
 }
 
 #you-win {
     display: none;
+    font-family: 'press start 2p'
 }
 
 .buttonTable {
@@ -103,4 +127,5 @@ body {
     height: 50px;
     font-size: 24px;
     box-shadow: 5px 10px;
+    font-family: 'press start 2p'
 }
