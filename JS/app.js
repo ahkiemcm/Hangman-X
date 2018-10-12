@@ -36,8 +36,18 @@ console.log('Working')
 //I'm thinking the letters from each word or phrase are going to be hidden and revealed
 // based on letter pressed. That might make this easier...
 
+//Select game mode---> run function gameSet() =
 //Words and phrases randomly selected based on category array, then pushed into an empty
 // array called 'game zone'. New array is then separated by letter--hide each letter.
 //Each button in letter pool loops through an array of letters to 
 // check if it belongs or not. 
 //Whether it is or not dictates the following action.
+
+
+//Query select the button class, call the resulting array "letter-pool"
+//For loop through the array, adding an onclick event listener for every iteration (0-25) with a function called gameCheck()
+
+//function gameCheck() =
+// for loop through the length of the gameZone array which contains the randomly chosen word or phrase
+// Ex. Compare letter-pool[3](that would be D) ==  gameZone[x].length {hide or reveal and run corresponding 
+// image switch and animation functions}
