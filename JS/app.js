@@ -5,7 +5,7 @@ console.log('Working')
 //We need functions to hide our page sections, set to reveal and hide sections on certain
 //click events.
 
-//We need functions to take a value from the buttons we press equal to the letter pressed.
+//We need functions to take a value from the buttons we press equal to the letter selected.
 
 //Buttons need to print character value into a form. 
 
@@ -32,4 +32,12 @@ console.log('Working')
 // Make a smart randomizer.
 
 //Somehow we need to check if the letter belongs in the word
-//If letter belongs in word, 
+
+//I'm thinking the letters from each word or phrase are going to be hidden and revealed
+// based on letter pressed. That might make this easier...
+
+//Words and phrases randomly selected based on category array, then pushed into an empty
+// array called 'game zone'. New array is then separated by letter--hide each letter.
+//Each button in letter pool loops through an array of letters to 
+// check if it belongs or not. 
+//Whether it is or not dictates the following action.
