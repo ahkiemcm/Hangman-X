@@ -28,30 +28,38 @@ we are going to need either a div or a section to target -->
         <div class="game-start">
             <h2 id='start-game'> Start Game</h2>
             <!--Onclick: reveal list-->
-            <ul class="game-select">
-                <li>Categories</li>
+            <ul>
+                <li class="outer-list">Words</li>
                 <ul>
-                    <li>Megaman</li>
+                    <li class="inner-list">Megaman</li>
                 </ul>
-                <li>Random</li>
+                <li class="outer-list">Phrases</li>
+                <ul>
+                    <li class='inner-list'>Megaman</li>
+                </ul>
             </ul>
         </div>
     </div>
 
     <div class="sigma-monologue">
         <div id="sigma-walk">
-            <!-- <img src="/HANGMAN-IMG/MHXSigmaWALK.jpg" alt="sigma-walk"> -->
-            <p>I have removed keywords from mankind's reality. Without them, the feeble-minded humans cannot
-                communicate!</p>
+            <!-- Image in CSS -->
+            <div>
+                <p>I have removed keywords from mankind's reality. Without them, the feeble-minded humans cannot
+                    communicate!</p>
+                <button type="button" class="nextButton">NEXT --></button>
+            </div>
         </div>
 
-    </div>
 
-    <div id="sigma-challenge">
-        <!-- <img src="/HANGMAN-IMG/SigmaChallenge.jpg" alt="sigma-challenge"> -->
-        <p>They will be powerless, and you are powerless to stop me!</p>
+        <div id="sigma-challenge">
+            <!-- Image in CSS -->
+            <div>
+                <p>They will be powerless, and you are powerless to stop me!</p>
+                <button type="button" class="nextButton">NEXT --></button>
+            </div>
+        </div>
     </div>
-
     <div class="game-page">
         <!-- BG Image in CSS -->
         <div class="game-display">

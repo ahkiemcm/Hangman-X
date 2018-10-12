@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    display: flex;
+    flex-flow: column;
 }
 
 /* TITLE PAGE */
@@ -9,7 +11,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
-    /* display: none; */
+    display: none;
 }
 
 #hang-man-x {
@@ -23,7 +25,6 @@ body {
 #start-game:hover {
     transition: .5s;
     color: #eed06f;
-
 }
 
 .game-start li:hover {
@@ -31,15 +32,17 @@ body {
     color: #eed06f;
 }
 
-.game-select li {
-    /* display: none; */
+.outer-list {
+    display: none;
+}
+
+.inner-list {
+    display: none;
 }
 
 .mega-sprite {
-    /* background-color: red; */
     width: 144px;
     height: 162px;
-    /* border: solid black; */
     background: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
 }
 
@@ -47,6 +50,10 @@ body {
 
 .sigma-monologue {
     background: black;
+    display: flex;
+    flex-flow: row;
+    display: none;
+
 }
 
 #sigma-walk {
@@ -56,7 +63,7 @@ body {
     width: 350px;
     height: 408px;
     color: #ffffff;
-    display: none;
+    visibility: hidden;
     font-family: 'press start 2p';
 }
 
@@ -66,7 +73,7 @@ body {
     width: 580px;
     height: 463px;
     color: #ffffff;
-    display: none;
+    visibility: hidden;
     font-family: 'press start 2p'
 }
 
@@ -110,14 +117,13 @@ body {
 }
 
 #you-lose {
-    display: none;
+    visibility: hidden;
     font-family: 'press start 2p'
 }
 
 #you-win {
-    display: none;
+    visibility: hidden;
     font-family: 'press start 2p'
-
 }
 
 .buttonTable {

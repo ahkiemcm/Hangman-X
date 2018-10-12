@@ -51,3 +51,14 @@ console.log('Working')
 // for loop through the length of the gameZone array which contains the randomly chosen word or phrase
 // Ex. Compare letter-pool[3](that would be D) ==  gameZone[x].length {hide or reveal and run corresponding 
 // image switch and animation functions}
+
+
+//Okay, here comes the hard part....Let's start by declaring variables. This can be the area we store them.
+
+//-------VARIABLE POOL-------//
+var gameStart = document.querySelector('#start-game')
+var modeSelect = document.querySelector('.outer-list')
+var catSubject = document.querySelector('.inner-list')
+
+var 
+
