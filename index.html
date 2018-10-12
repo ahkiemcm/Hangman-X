@@ -48,23 +48,39 @@ we are going to need either a div or a section to target -->
     </div>
 
     <div class="game-page">
-        <!-- Image in CSS -->
+        <!-- BG Image in CSS -->
         <div class="game-display">
-            <img src="/HANGMAN-IMG/megaman-healthbar-full.png" alt="full-health">
-            
-            <form>
-                <input itype="text">
-            </form>
+            <div id="health-bar">
+                <!-- Image in CSS -->
+            </div>
+            <p class="category">
+                <!-- Populate through javascript -->
+            </p>
 
-            <img src="/HANGMAN-IMG/YOU-LOSE.png" alt="you-lose" id="you-lose">
-            <img src="/HANGMAN-IMG/YOU-WIN.png" alt="you-win" id="you-win">
+            <div class="spellZone">
+                <!-- We've gotta figure out how we're gonna get words to print in here...
+                Hide and reveal characters...
+                Letters have to be matched to a div for that to work, and have to pull from an array right?
+                Research the logic here... -->
+                <!-- This div will be super long no doubt. Examples have taught us this. -->
+            </div>
+
+            <div class="contest">
+                <img src="/HANGMAN-IMG/YOU-LOSE.png" alt="you-lose" id="you-lose">
+                <img src="/HANGMAN-IMG/YOU-WIN.png" alt="you-win" id="you-win">
+            </div>
         </div>
 
         <div class="sprite-act" id="megaman">
-
+            <!-- Image in CSS -->
         </div>
 
         <div class="sprite-act" id="sigma">
+            <!-- Image in CSS -->
+        </div>
+
+        <div class="buttonTable">
+            <table></table>
 
         </div>
     </div>
