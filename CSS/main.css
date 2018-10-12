@@ -11,7 +11,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
-    display: none;
+    /* display: none; */
 }
 
 #hang-man-x {
@@ -36,7 +36,11 @@ body {
     display: none;
 }
 
-.inner-list {
+.inner-list-W {
+    display: none;
+}
+
+.inner-list-P {
     display: none;
 }
 
@@ -53,7 +57,6 @@ body {
     display: flex;
     flex-flow: row;
     display: none;
-
 }
 
 #sigma-walk {
@@ -83,7 +86,7 @@ body {
     background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
     width: 1400px;
     height: 788px;
-    /* display: none; */
+    display: none;
 }
 
 #health-bar {
@@ -93,7 +96,8 @@ body {
 }
 
 .spellZone {
-    background-color: red;
+    background-color: transparent;
+    color: dodgerblue;
     width: 800px;
     height: 200px;
     border: solid black;
@@ -137,3 +141,13 @@ body {
     box-shadow: 5px 10px;
     font-family: 'press start 2p'
 }
+
+/* gameStart.addEventListener('click', function () {
+    // modeSelect.style.display = block;
+        if (modeSelect.style.display === "none") {
+            modeSelect.style.display = "block";
+        } else {
+            modeSelect.style.display = "none";
+        }
+    
+}) */

@@ -59,7 +59,10 @@ console.log('Working')
 var titlePage = document.querySelector('.title-page')
 var gameStart = document.querySelector('#start-game')
 var modeSelect = document.querySelector('.outer-list')
-var catSubject = document.querySelector('.inner-list')
+var wordList = document.querySelector('#wordList')
+var phraseList = document.querySelector('#phraseList')
+var catSubjectW = document.querySelectorAll('.inner-list-W')
+var catSubjectP= document.querySelectorAll('.inner-list-P')
 
 var sigmaTalk = document.querySelector('.sigma-monologue')
 var sigmaWalk = document.querySelector('#sigma-walk')
@@ -75,12 +78,57 @@ var gameZone = []
 var letterPool = document.querySelectorAll('.alphabet')
 
 
-//-------FUNCTIONS-------//
+//-------GAME FUNCTIONS-------//
 
 //Button set-up
 for (x = 0; x < letterPool.length; x++) {
     letterPool[x].addEventListener('click', function gameCheck() {
-    alert("I'm working!")
+        alert(`I'm working!`)
     })
 }
 
+function gameSetW() {
+    gameZone = words[Math.floor(Math.random() * words.length)]
+    alert(gameZone.split())
+}
+
+function gameSetP() {
+    gameZone = phrases[Math.floor(Math.random() * phrases.length)]
+    alert(gameZone)
+}
+
+//Populate spellZone with gameZone.split() array, visibilty = hidden until revealed on match
+// if (this.childNodes[0].style.visibility == "visible") {
+// this.childNodes[0].style.visibility = "hidden";  //hide item
+//     } else {
+//     this.childNodes[0].style.visibility = "visible";  //show item
+// }
+
+
+//-------TRANSITIONAL FUNCTIONS-------//
+gameStart.addEventListener('click', function() {
+    // modeSelect.style.display = block;
+    if (modeSelect.style.display === "none") {
+        modeSelect.style.display = "block";
+    } else {
+        modeSelect.style.display = "none";
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------ACTION FUNCTIONS-------//
