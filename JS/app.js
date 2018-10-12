@@ -72,11 +72,15 @@ var gamePage = document.querySelector('.game-page')
 var words = ['megaman X', 'zero', 'vile', 'doctor light', 'maverick', 'reploid', 'sigma']
 var phrases = ["its not over yet", "its time to get serious"]
 var gameZone = []
-var letterPool = document.querySelectorAll('alphabet') 
+var letterPool = document.querySelectorAll('.alphabet')
 
 
 //-------FUNCTIONS-------//
 
+//Button set-up
 for (x = 0; x < letterPool.length; x++) {
-    letterPool[x].addEventListener('click',)
+    letterPool[x].addEventListener('click', function gameCheck() {
+    alert("I'm working!")
+    })
 }
+
