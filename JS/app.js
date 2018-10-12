@@ -56,9 +56,27 @@ console.log('Working')
 //Okay, here comes the hard part....Let's start by declaring variables. This can be the area we store them.
 
 //-------VARIABLE POOL-------//
+var titlePage = document.querySelector('.title-page')
 var gameStart = document.querySelector('#start-game')
 var modeSelect = document.querySelector('.outer-list')
 var catSubject = document.querySelector('.inner-list')
 
-var 
+var sigmaTalk = document.querySelector('.sigma-monologue')
+var sigmaWalk = document.querySelector('#sigma-walk')
+var sigmaPoint = document.querySelector('#sigma-challenge')
 
+var gamePage = document.querySelector('.game-page')
+
+//-------VARIABLES-------//
+
+var words = ['megaman X', 'zero', 'vile', 'doctor light', 'maverick', 'reploid', 'sigma']
+var phrases = ["its not over yet", "its time to get serious"]
+var gameZone = []
+var letterPool = document.querySelectorAll('alphabet') 
+
+
+//-------FUNCTIONS-------//
+
+for (x = 0; x < letterPool.length; x++) {
+    letterPool[x].addEventListener('click',)
+}

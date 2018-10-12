@@ -81,8 +81,8 @@ body {
 
 .game-page {
     background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
-    width: cover;
-    height: 720px;
+    width: 1400px;
+    height: 788px;
     /* display: none; */
 }
 
