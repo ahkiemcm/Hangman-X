@@ -1,5 +1,5 @@
 body {
-    justify-content: center;
+    background-color: black;
 }
 
 .title-page {
@@ -7,6 +7,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
+    /* display: none; */
 }
 
 #hang-man-x {
@@ -26,20 +27,31 @@ body {
     background: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
 }
 
+.sigma-monologue {
+    background: black;
+}
+
 #sigma-walk {
     background-color: black;
     background: url(/HANGMAN-IMG/SigmaWALK.png) no-repeat;
+    width: 350px;
+    height: 408px;
+    color: #ffffff;
+    display: none;
 }
 
-#pr input {
-    height: 300px;
-    width: 200px;
-    border: none;
+#sigma-challenge {
+    background-color: black;
+    background: url(/HANGMAN-IMG/SigmaChallenge.png) no-repeat;
+    width: 580px;
+    height: 463px;
+    color: #ffffff;
+    display: none;
 }
 
 .game-page {
     background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
-    /* display: none; */
+    display: none;
     width: cover;
     height: 720px;
 }
@@ -83,7 +95,7 @@ body {
 }
 
 .buttonTable {
-margin-left: 200px;
+    margin-left: 280px;
 }
 
 .alphabet {
