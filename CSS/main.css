@@ -9,11 +9,6 @@ body {
     height: 720px;
 }
 
-#sigma-walk {
-    background-color: black;
-    background: url(/HANGMAN-IMG/SigmaWALK.png) no-repeat;
-}
-
 #hang-man-x {
     background-color: transparent;
 }
@@ -29,6 +24,11 @@ body {
     height: 162px;
     /* border: solid black; */
     background: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
+}
+
+#sigma-walk {
+    background-color: black;
+    background: url(/HANGMAN-IMG/SigmaWALK.png) no-repeat;
 }
 
 #pr input {
@@ -53,8 +53,10 @@ body {
 .spellZone {
     background-color: red;
     width: 800px;
-    height: 400px;
+    height: 200px;
     border: solid black;
+    margin-top: -200px;
+    margin-left: 240px;
 }
 
 #megaman {
@@ -78,4 +80,15 @@ body {
 
 #you-win {
     display: none;
+}
+
+.buttonTable {
+margin-left: 200px;
+}
+
+.alphabet {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    box-shadow: 5px 10px;
 }
