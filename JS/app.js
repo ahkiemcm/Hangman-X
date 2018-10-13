@@ -115,6 +115,10 @@ gameStart.addEventListener('click', function() {
     }
 })
 
+modeSelect.addEventListener('click', function () {
+    
+}
+
 
 
 
