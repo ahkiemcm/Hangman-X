@@ -88,24 +88,24 @@ for (x = 0; x < letterPool.length; x++) {
 }
 
 //Game Setup
-function gameSetW() {
-    gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
-    var zoneSplit = gamezone.split('')   //Splits up the guess word and puts it into a new array
-    for (x = 0; x < zoneSplit.length; x++) {
-        var zoneCast = ""
-        zoneCast += zoneSplit[x]
-        alert(zoneCast)
-    }
-}
+// function gameSetW() {
+//     gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
+//     var zoneSplit = gamezone.split('')   //Splits up the guess word and puts it into a new array
+//     for (x = 0; x < zoneSplit.length; x++) {
+//         var zoneCast = ""
+//         zoneCast += zoneSplit[x]
+//         alert(zoneCast)
+//     }
+// }
 
 //     document.querySelector('#spellScreen').innerHTML = zoneCast
 // }
 
-function gameSetP() {
-    gameZone = phrases[Math.floor(Math.random() * phrases.length)] //Picks a random word
-    var zoneSplit = gamezone.split('')   //Splits up the guess phrase and puts it into a new array
-    document.getElementById('spellScreen').innerHTML = zoneSplit
-}
+// function gameSetP() {
+//     gameZone = phrases[Math.floor(Math.random() * phrases.length)] //Picks a random word
+//     var zoneSplit = gamezone.split('')   //Splits up the guess phrase and puts it into a new array
+//     document.getElementById('spellScreen').innerHTML = zoneSplit
+// }
 
 //Populate spellZone with gameZone.split() array, visibilty = hidden until revealed on match
 // if (this.childNodes[0].style.visibility == "visible") {
@@ -132,6 +132,17 @@ function gameSetP() {
 // catSubjectW.addEventListener('click', fuction(){
 //     //We need to hide the title page and reveal the story fragment page.
 // })
+
+
+
+////------THIS IS WHERE WE ARE RIGHT NOW!!!-------////
+    gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
+    var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
+// for (x = 0; x < zoneSplit.length; x++) {
+//     var zoneCast = ""
+    // zoneCast += zoneSplit[x]
+    // alert(zoneSplit) //Alerted each letter individually. We need it to print individuallt to that 
+// }
 
 
 
