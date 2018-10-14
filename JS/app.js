@@ -80,21 +80,23 @@ var letterPool = document.querySelectorAll('.alphabet')
 
 //-------GAME FUNCTIONS-------//
 
-//Button set-up
+//Button Setup
 for (x = 0; x < letterPool.length; x++) {
     letterPool[x].addEventListener('click', function gameCheck() {
         alert(`I'm working!`)
     })
 }
 
+//Game Setup
 function gameSetW() {
-    gameZone = words[Math.floor(Math.random() * words.length)]
-    alert(gameZone.split())
+    gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
+    var zoneSplit = gamezone.split('')   //Splits up the guess word and puts it into a new array
+    document.getElementById('spellScreen').innerHTML = zoneSplit
 }
 
 function gameSetP() {
-    gameZone = phrases[Math.floor(Math.random() * phrases.length)]
-    alert(gameZone)
+    gameZone = phrases[Math.floor(Math.random() * phrases.length)] //Picks a random word
+    var zoneSplit = gamezone.split('')   //Splits up the guess phrase and puts it into a new array
 }
 
 //Populate spellZone with gameZone.split() array, visibilty = hidden until revealed on match
@@ -115,10 +117,13 @@ gameStart.addEventListener('click', function() {
     }
 })
 
-modeSelect.addEventListener('click', function () {
+// modeSelect.addEventListener('click', function () {
     
-}
+// }
 
+// catSubjectW.addEventListener('click', fuction(){
+//     //We need to hide the title page and reveal the story fragment page.
+// })
 
 
 

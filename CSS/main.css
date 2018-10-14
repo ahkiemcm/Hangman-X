@@ -11,7 +11,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
-    /* display: none; */
+    display: none;
 }
 
 #hang-man-x {
@@ -32,7 +32,7 @@ body {
     color: #eed06f;
 }
 
-.outer-list {
+/* .outer-list {
     display: none;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .inner-list-P {
     display: none;
-}
+} */
 
 .mega-sprite {
     width: 144px;
@@ -86,7 +86,7 @@ body {
     background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
     width: 1400px;
     height: 788px;
-    display: none;
+    /* display: none; */
 }
 
 #health-bar {
