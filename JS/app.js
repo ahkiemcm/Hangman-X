@@ -91,12 +91,20 @@ for (x = 0; x < letterPool.length; x++) {
 function gameSetW() {
     gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
     var zoneSplit = gamezone.split('')   //Splits up the guess word and puts it into a new array
-    document.getElementById('spellScreen').innerHTML = zoneSplit
+    for (x = 0; x < zoneSplit.length; x++) {
+        var zoneCast = ""
+        zoneCast += zoneSplit[x]
+        alert(zoneCast)
+    }
 }
+
+//     document.querySelector('#spellScreen').innerHTML = zoneCast
+// }
 
 function gameSetP() {
     gameZone = phrases[Math.floor(Math.random() * phrases.length)] //Picks a random word
     var zoneSplit = gamezone.split('')   //Splits up the guess phrase and puts it into a new array
+    document.getElementById('spellScreen').innerHTML = zoneSplit
 }
 
 //Populate spellZone with gameZone.split() array, visibilty = hidden until revealed on match
@@ -108,14 +116,14 @@ function gameSetP() {
 
 
 //-------TRANSITIONAL FUNCTIONS-------//
-gameStart.addEventListener('click', function() {
-    // modeSelect.style.display = block;
-    if (modeSelect.style.display === "none") {
-        modeSelect.style.display = "block";
-    } else {
-        modeSelect.style.display = "none";
-    }
-})
+// gameStart.addEventListener('click', function() {
+//     // modeSelect.style.display = block;
+//     if (modeSelect.style.display === "none") {
+//         modeSelect.style.display = "block";
+//     } else {
+//         modeSelect.style.display = "none";
+//     }
+// })
 
 // modeSelect.addEventListener('click', function () {
     
@@ -140,4 +148,4 @@ gameStart.addEventListener('click', function() {
 
 
 
-//-------ACTION FUNCTIONS-------//
+//-------ACTION FUNCTIONS-------

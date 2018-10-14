@@ -11,7 +11,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
-    display: none;
+    /* display: none; */
 }
 
 #hang-man-x {
@@ -96,7 +96,7 @@ body {
 }
 
 .spellZone {
-    background-color: transparent;
+    background-color: rgb(255,0,0,.4);
     color: dodgerblue;
     width: 800px;
     height: 200px;

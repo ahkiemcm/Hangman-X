@@ -26,16 +26,16 @@ we are going to need either a div or a section to target -->
         </div>
 
         <div class="game-start">
-            <h2 id='start-game'> Start Game</h2>
+            <h2 id='start-game' onclick="gameSetW()"> Start Game</h2>
             <!--Onclick: reveal list-->
             <ul>
-                <li class="outer-list" id="wordList">Words</li>
+                <li class="outer-list" id="wordList" >Words</li>
                 <ul>
-                    <li class="inner-list-W">Megaman</li>
+                    <li class="inner-list-W" >Megaman</li>
                 </ul>
-                <li class="outer-list" id="phraseList">Phrases</li>
+                <li class="outer-list" id="phraseList" onclick="gameSetP()">Phrases</li>
                 <ul>
-                    <li class='inner-list-P'>Megaman</li>
+                    <li class='inner-list-P' >Megaman</li>
                 </ul>
             </ul>
         </div>
