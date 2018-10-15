@@ -79,12 +79,47 @@ var letterPool = document.querySelectorAll('.alphabet')
 
 //-------GAME FUNCTIONS-------//
 //Button Setup
-for (x = 0; x < letterPool.length; x++) {
-    letterPool[x].addEventListener('click', function gameCheck() {
-        console.log(letterPool.value)
+// for (x = 0; x < letterPool.length; x++) {
+    // letterPool[].addEventListener('click', function gameCheck() {
+    //     console.log(letterPool[x].value)
 
-    })
+
+    // })
+// }
+
+////------THIS IS WHERE WE ARE RIGHT NOW!!!-------////
+gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
+var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
+    //Creating a variable here for #spellScreen
+// var spellScreen = document.querySelector('#spellScreen')
+//     spellScreen.innerHTML = zoneSplit.join(" ")
+
+
+
+
+console.log(zoneSplit)
+function gameCheckA() {
+    console.log(zoneSplit)
+
+    for (x = 0; x < zoneSplit.length; x++) {
+
+        console.log(zoneSplit)
+        if (zoneSplit.includes('a')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
 }
+
+function gameCheckE() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('e')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+
 
 //Game Setup
 // function gameSetW() {
@@ -138,8 +173,8 @@ for (x = 0; x < letterPool.length; x++) {
     gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
     var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
     //Creating a variable here for #spellScreen
-var spellScreen = document.querySelector('#spellScreen')
-    spellScreen.innerHTML = zoneSplit.join(" ")
+// var spellScreen = document.querySelector('#spellScreen')
+//     spellScreen.innerHTML = zoneSplit.join(" ")
     
 
 
