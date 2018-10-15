@@ -13,20 +13,20 @@ console.log('Working')
 
 //Create conditionals that specify the rules of the game
 
-    //Player chooses a letter > If letter is correct, print letter to form
-    //Animate: Megaman shoots :D
-    //If 2nd correct in a row, shoot then charge
-    //If 3rd correct in a row, fire a charged blast--reset
-    //If letter fills more than one spot, animate: Megaman jump shot + shoot on landq
-    // > If not, remove portion of health bar to symbolize a chance lost. 
-        //Health bar will consist of 5 different images, each with subsequently less health
-    //> Player chooses another letter. Is there a loop we can do to make this more DRY?
+//Player chooses a letter > If letter is correct, print letter to form
+//Animate: Megaman shoots :D
+//If 2nd correct in a row, shoot then charge
+//If 3rd correct in a row, fire a charged blast--reset
+//If letter fills more than one spot, animate: Megaman jump shot + shoot on land
+// > If not, remove portion of health bar to symbolize a chance lost. 
+//Health bar will consist of 5 different images, each with subsequently less health
+//> Player chooses another letter. Is there a loop we can do to make this more DRY?
 
-    //If player guesses wrong 5 times, player loses (cue animation or image for game lose)
-    //If player fills form before 5 characters, player wins (cue animation/image for game win)
-    
-    //Kind of a stretch goal here: If the player answers correctly 3 times in a row, player 
-    //unlocks all vowels in the word OR unlocks an extra letter
+//If player guesses wrong 4 times, player loses (cue animation or image for game lose)
+//If player fills form before 4 wrong guesses, player wins (cue animation/image for game win)
+
+//Kind of a stretch goal here: If the player answers correctly 3 times in a row, player 
+//unlocks all vowels in the word OR unlocks an extra letter
 
 // Store categories and word choices in arrays. 
 // Make a smart randomizer.
@@ -62,7 +62,7 @@ var modeSelect = document.querySelector('.outer-list')
 var wordList = document.querySelector('#wordList')
 var phraseList = document.querySelector('#phraseList')
 var catSubjectW = document.querySelectorAll('.inner-list-W')
-var catSubjectP= document.querySelectorAll('.inner-list-P')
+var catSubjectP = document.querySelectorAll('.inner-list-P')
 
 var sigmaTalk = document.querySelector('.sigma-monologue')
 var sigmaWalk = document.querySelector('#sigma-walk')
@@ -78,62 +78,24 @@ var gameZone = []
 var letterPool = document.querySelectorAll('.alphabet')
 
 //-------GAME FUNCTIONS-------//
-//Button Setup
+// Button Setup
 // for (x = 0; x < letterPool.length; x++) {
-    // letterPool[].addEventListener('click', function gameCheck() {
-    //     console.log(letterPool[x].value)
-
-
-    // })
+// letterPool[].addEventListener('click', function gameCheck() {
+//     console.log(letterPool[x].value)
+// })
 // }
-
-////------THIS IS WHERE WE ARE RIGHT NOW!!!-------////
-gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
-var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
-    //Creating a variable here for #spellScreen
-// var spellScreen = document.querySelector('#spellScreen')
-//     spellScreen.innerHTML = zoneSplit.join(" ")
-
-
-
-
-console.log(zoneSplit)
-function gameCheckA() {
-    console.log(zoneSplit)
-
-    for (x = 0; x < zoneSplit.length; x++) {
-
-        console.log(zoneSplit)
-        if (zoneSplit.includes('a')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
-        }
-    }
-}
-
-function gameCheckE() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('e')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
-        }
-    }
-}
 
 
 //Game Setup
 // function gameSetW() {
-//     gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
-//     var zoneSplit = gamezone.split('')   //Splits up the guess word and puts it into a new array
-//     for (x = 0; x < zoneSplit.length; x++) {
-//         var zoneCast = ""
-//         zoneCast += zoneSplit[x]
-//         alert(zoneCast)
-//     }
+    gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
+    var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
+    // Creating a variable here for #spellScreen
+    var spellScreen = document.querySelector('#spellScreen')
+    spellScreen.innerHTML = zoneSplit.join(" ")
 // }
 
 //     document.querySelector('#spellScreen').innerHTML = zoneCast
-// }
 
 // function gameSetP() {
 //     gameZone = phrases[Math.floor(Math.random() * phrases.length)] //Picks a random word
@@ -149,44 +111,253 @@ function gameCheckE() {
 // }
 
 
+
+
+//Game check
+var wordGuess = []
+for (x = 0; x < zoneSplit; x++) {
+    wordGuess.push('_')
+    spellScreen.innerHTML = wordGuess
+}
+
+
+function gameCheckA() {
+    console.log(zoneSplit)
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('a')) { spellScreen.innerHTML = 'a' }
+        else {
+            alert('No match.')
+        }
+    }
+}
+
+function gameCheckB() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('b')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckC() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('c')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckD() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('d')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckE() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('e')) { spellScreen.innerHTML = 'e'  }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckF() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('f')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckG() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('g')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckH() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('h')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckI() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('i')) { spellScreen.innerHTML = 'i'  }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckJ() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('j')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckK() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('k')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckL() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('l')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckM() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('m')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckN() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('n')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckO() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('o')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckP() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('p')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckQ() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('q')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckR() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('r')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckS() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('s')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckT() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('t')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckU() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('u')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckV() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('v')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckW() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('w')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckX() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('x')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckY() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('y')) { console.log(zoneSplit[x]) }
+        else {
+            alert('No match.')
+        }
+    }
+}
+function gameCheckZ() {
+    for (x = 0; x < zoneSplit.length; x++) {
+        if (zoneSplit.includes('z')) { spellScreen.innerHTML = 'z'  }
+        else {
+            alert('No match.')
+        }
+    }
+}
+
+
+
+
+
 //-------TRANSITIONAL FUNCTIONS-------//
-// gameStart.addEventListener('click', function() {
-//     // modeSelect.style.display = block;
-//     if (modeSelect.style.display === "none") {
-//         modeSelect.style.display = "block";
-//     } else {
-//         modeSelect.style.display = "none";
-//     }
-// })
+// modeSelect.style.display = block;
+
+$('#start-game').click(function () {
+    $('.title-page').fadeOut()
+    $('.sigma-monologue').fadeIn(5000)
+    $('#sigma-walk').fadeIn(7000)
+    
+})
+
+$('#nextButton1').click(function () {
+    $('#sigma-walk').fadeOut(3000)
+    $('#sigma-challenge').fadeIn(4000)
+})
 
 // modeSelect.addEventListener('click', function () {
-    
+
 // }
 
 // catSubjectW.addEventListener('click', fuction(){
 //     //We need to hide the title page and reveal the story fragment page.
 // })
-
-
-
-////------THIS IS WHERE WE ARE RIGHT NOW!!!-------////
-    gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
-    var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
-    //Creating a variable here for #spellScreen
-// var spellScreen = document.querySelector('#spellScreen')
-//     spellScreen.innerHTML = zoneSplit.join(" ")
-    
-
-
-    // for (x = 0; x < zoneSplit.length; x++) {
-//     var zoneCast = ""
-    // zoneCast += zoneSplit[x]
-    // alert(zoneSplit) //Alerted each letter individually. We need it to print individuallt to that 
-// }
-
-
-
-
 
 
 

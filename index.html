@@ -29,9 +29,9 @@ we are going to need either a div or a section to target -->
             <h2 id='start-game'> Start Game</h2>
             <!--Onclick: reveal list-->
             <ul>
-                <li class="outer-list" id="wordList" >Words</li>
+                <li class="outer-list" id="wordList">Words</li>
                 <ul>
-                    <li class="inner-list-W" onclick="gameSetW()">Megaman</li>
+                    <li class="inner-list-W">Megaman</li>
                 </ul>
                 <li class="outer-list" id="phraseList">Phrases</li>
                 <ul>
@@ -47,7 +47,7 @@ we are going to need either a div or a section to target -->
             <div>
                 <p>I have removed keywords from mankind's reality. Without them, the feeble-minded humans cannot
                     communicate!</p>
-                <button type="button" class="nextButton">NEXT --></button>
+                <button type="button" id="nextButton1">NEXT --></button>
             </div>
         </div>
 
@@ -56,7 +56,7 @@ we are going to need either a div or a section to target -->
             <!-- Image in CSS -->
             <div>
                 <p>They will be powerless, and you are powerless to stop me!</p>
-                <button type="button" class="nextButton">NEXT --></button>
+                <button type="button" id="nextButton2">NEXT --></button>
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@ we are going to need either a div or a section to target -->
                 Letters have to be matched to a div for that to work, and have to pull from an array right?
                 Research the logic here... -->
                 <!-- This div will be super long no doubt. Examples have taught us this. -->
-            <h1 id="spellScreen"></h1>
+                <h1 id="spellScreen"></h1>
             </div>
 
             <div class="contest">
@@ -100,81 +100,81 @@ we are going to need either a div or a section to target -->
                         <button type="button" class="alphabet" value="A" onclick='gameCheckA()'>A</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="B">B</button>
+                        <button type="button" class="alphabet" value="B" onclick='gameCheckB()'>B</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="C">C</button>
+                        <button type="button" class="alphabet" value="C" onclick='gameCheckC()'>C</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="D">D</button>
+                        <button type="button" class="alphabet" value="D" onclick='gameCheckD()'>D</button>
                     </td>
                     <td>
                         <button type="button" class="alphabet" value="E" onclick="gameCheckE()">E</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="F">F</button>
+                        <button type="button" class="alphabet" value="F" onclick='gameCheckF()'>F</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="G">G</button>
+                        <button type="button" class="alphabet" value="G" onclick='gameCheckG()'>G</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="H">H</button>
+                        <button type="button" class="alphabet" value="H" onclick='gameCheckH()'>H</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="I">I</button>
+                        <button type="button" class="alphabet" value="I" onclick='gameCheckI()'>I</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="J">J</button>
+                        <button type="button" class="alphabet" value="J" onclick='gameCheckJ()'>J</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="K">K</button>
+                        <button type="button" class="alphabet" value="K" onclick='gameCheckK()'>K</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="L">L</button>
+                        <button type="button" class="alphabet" value="L" onclick='gameCheckL()'>L</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="M">M</button>
+                        <button type="button" class="alphabet" value="M" onclick='gameCheckM()'>M</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="alphabet" value="N">N</button>
+                        <button type="button" class="alphabet" value="N" onclick='gameCheckN()'>N</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="O">O</button>
+                        <button type="button" class="alphabet" value="O" onclick='gameCheckO()'>O</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="P">P</button>
+                        <button type="button" class="alphabet" value="P" onclick='gameCheckP()'>P</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="Q">Q</button>
+                        <button type="button" class="alphabet" value="Q" onclick='gameCheckQ()'>Q</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="R">R</button>
+                        <button type="button" class="alphabet" value="R" onclick='gameCheckR()'>R</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="S">S</button>
+                        <button type="button" class="alphabet" value="S" onclick='gameCheckS()'>S</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="T">T</button>
+                        <button type="button" class="alphabet" value="T" onclick='gameCheckT()'>T</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="U">U</button>
+                        <button type="button" class="alphabet" value="U" onclick='gameCheckU()'>U</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="V">V</button>
+                        <button type="button" class="alphabet" value="V" onclick='gameCheckV()'>V</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="W">W</button>
+                        <button type="button" class="alphabet" value="W" onclick='gameCheckW()'>W</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="X">X</button>
+                        <button type="button" class="alphabet" value="X" onclick='gameCheckX()'>X</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="Y">Y</button>
+                        <button type="button" class="alphabet" value="Y" onclick='gameCheckY()'>Y</button>
                     </td>
                     <td>
-                        <button type="button" class="alphabet" value="Z">Z</button>
+                        <button type="button" class="alphabet" value="Z" onclick='gameCheckZ()'>Z</button>
                     </td>
                 </tr>
             </table>
@@ -183,7 +183,8 @@ we are going to need either a div or a section to target -->
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="/JS/app.js"></script>
 </body>
 

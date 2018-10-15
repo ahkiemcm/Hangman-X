@@ -66,7 +66,7 @@ body {
     width: 350px;
     height: 408px;
     color: #ffffff;
-    visibility: hidden;
+    /* visibility: hidden; */
     font-family: 'press start 2p';
 }
 
@@ -76,7 +76,8 @@ body {
     width: 580px;
     height: 463px;
     color: #ffffff;
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
     font-family: 'press start 2p'
 }
 
@@ -86,7 +87,7 @@ body {
     background: url(/HANGMAN-IMG/destroyed-city.png) no-repeat;
     width: 1400px;
     height: 788px;
-    /* display: none; */
+    display: none;
 }
 
 #health-bar {
@@ -144,13 +145,4 @@ body {
     font-family: 'press start 2p'
 }
 
-/* gameStart.addEventListener('click', function () {
-    // modeSelect.style.display = block;
-        if (modeSelect.style.display === "none") {
-            modeSelect.style.display = "block";
-        } else {
-            modeSelect.style.display = "none";
-        }
-    
-}) */
 
