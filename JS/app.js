@@ -138,7 +138,13 @@ for (x = 0; x < letterPool.length; x++) {
 ////------THIS IS WHERE WE ARE RIGHT NOW!!!-------////
     gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
     var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
-// for (x = 0; x < zoneSplit.length; x++) {
+    //Creating a variable here for #spellScreen
+var spellScreen = document.querySelector('#spellScreen')
+    spellScreen.innerHTML = zoneSplit.join(" ")
+    
+
+
+    // for (x = 0; x < zoneSplit.length; x++) {
 //     var zoneCast = ""
     // zoneCast += zoneSplit[x]
     // alert(zoneSplit) //Alerted each letter individually. We need it to print individuallt to that 
