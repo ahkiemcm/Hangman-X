@@ -80,19 +80,25 @@ var letterPool = document.querySelectorAll('.alphabet')
 //-------GAME FUNCTIONS-------//
 // Button Setup
 // for (x = 0; x < letterPool.length; x++) {
-// letterPool[].addEventListener('click', function gameCheck() {
+// letterPool[x].addEventListener('click', function gameCheck() {
 //     console.log(letterPool[x].value)
 // })
 // }
 
 
 //Game Setup
-// function gameSetW() {
-    gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
-    var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
-    // Creating a variable here for #spellScreen
-    var spellScreen = document.querySelector('#spellScreen')
-    spellScreen.innerHTML = zoneSplit.join(" ")
+// function gameSet() {
+gameZone = words[Math.floor(Math.random() * words.length)] //Picks a random word
+var zoneSplit = gameZone.split('')   //Splits up the guess word and puts it into a new array
+// Creating a variable here for #spellScreen
+var spellScreen = document.querySelector('#spellScreen')
+console.log(zoneSplit.join(" "))
+
+var wordGuess = []
+for (x = 0; x < zoneSplit.length; x++) {
+    wordGuess[x] = '_'
+    spellScreen.innerHTML = wordGuess.join(" ")
+}
 // }
 
 //     document.querySelector('#spellScreen').innerHTML = zoneCast
@@ -114,36 +120,44 @@ var letterPool = document.querySelectorAll('.alphabet')
 
 
 //Game check
-var wordGuess = []
-for (x = 0; x < zoneSplit; x++) {
-    wordGuess.push('_')
-    spellScreen.innerHTML = wordGuess
-}
-
-
 function gameCheckA() {
-    console.log(zoneSplit)
+    // console.log(zoneSplit)
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('a')) { spellScreen.innerHTML = 'a' }
+        if (zoneSplit.includes('a')) {
+            console.log(zoneSplit.indexOf('a'))
+            wordGuess[zoneSplit.indexOf('a')] = 'a'
+            spellScreen.innerHTML = wordGuess.join('')
+    
+        }
         else {
-            alert('No match.')
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 
 function gameCheckB() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('b')) { console.log(zoneSplit[x]) }
+        if (zoneSplit.includes('b')) {
+            console.log(zoneSplit.indexOf('b'))
+            wordGuess[zoneSplit.indexOf('b')] = 'b'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckC() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('c')) { console.log(zoneSplit[x]) }
+        if (zoneSplit.includes('a')) {
+            console.log(zoneSplit.indexOf('a'))
+            wordGuess[zoneSplit.indexOf('a')] = 'a'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
@@ -157,7 +171,7 @@ function gameCheckD() {
 }
 function gameCheckE() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('e')) { spellScreen.innerHTML = 'e'  }
+        if (zoneSplit.includes('e')) { spellScreen.innerHTML = 'e' }
         else {
             alert('No match.')
         }
@@ -189,7 +203,7 @@ function gameCheckH() {
 }
 function gameCheckI() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('i')) { spellScreen.innerHTML = 'i'  }
+        if (zoneSplit.includes('i')) { spellScreen.innerHTML = 'i' }
         else {
             alert('No match.')
         }
@@ -325,7 +339,7 @@ function gameCheckY() {
 }
 function gameCheckZ() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('z')) { spellScreen.innerHTML = 'z'  }
+        if (zoneSplit.includes('z')) { spellScreen.innerHTML = 'z' }
         else {
             alert('No match.')
         }
@@ -342,13 +356,18 @@ function gameCheckZ() {
 $('#start-game').click(function () {
     $('.title-page').fadeOut()
     $('.sigma-monologue').fadeIn(5000)
-    $('#sigma-walk').fadeIn(7000)
-    
+    $('#sigma-walk').fadeIn(2000)
+
 })
 
 $('#nextButton1').click(function () {
-    $('#sigma-walk').fadeOut(3000)
-    $('#sigma-challenge').fadeIn(4000)
+    $('#sigma-walk').fadeOut(200)
+    $('#sigma-challenge').fadeIn(3000)
+})
+
+$('#nextButton2').click(function () {
+    $('.sigma-monologue').fadeOut()
+    $('.game-page').fadeIn(5000)
 })
 
 // modeSelect.addEventListener('click', function () {

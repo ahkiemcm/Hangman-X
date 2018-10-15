@@ -56,6 +56,8 @@ body {
     background: black;
     display: flex;
     flex-flow: row;
+    justify-content: center;
+    align-items: center;
     display: none;
 }
 
@@ -97,7 +99,7 @@ body {
 }
 
 .spellZone {
-    background-color: rgb(255,0,0,.4);
+    background-color: rgb(255, 0, 0, .4);
     color: dodgerblue;
     width: 800px;
     height: 200px;
@@ -106,7 +108,9 @@ body {
     margin-left: 240px;
 }
 
-
+#spellScreen {
+    text-align: center;
+}
 
 #megaman {
     background-image: url(/HANGMAN-IMG/megaman-x-sprite-sheet-ready.png);
@@ -144,5 +148,3 @@ body {
     box-shadow: 5px 10px;
     font-family: 'press start 2p'
 }
-
-
