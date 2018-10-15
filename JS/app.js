@@ -68,22 +68,21 @@ var sigmaTalk = document.querySelector('.sigma-monologue')
 var sigmaWalk = document.querySelector('#sigma-walk')
 var sigmaPoint = document.querySelector('#sigma-challenge')
 
+
+//-------GAME VARIABLES-------//
+
 var gamePage = document.querySelector('.game-page')
-
-//-------VARIABLES-------//
-
 var words = ['megaman X', 'zero', 'vile', 'doctor light', 'maverick', 'reploid', 'sigma']
 var phrases = ["its not over yet", "its time to get serious"]
 var gameZone = []
 var letterPool = document.querySelectorAll('.alphabet')
 
-
 //-------GAME FUNCTIONS-------//
-
 //Button Setup
 for (x = 0; x < letterPool.length; x++) {
     letterPool[x].addEventListener('click', function gameCheck() {
-        alert(`I'm working!`)
+        console.log(letterPool.value)
+
     })
 }
 
