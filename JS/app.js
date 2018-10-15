@@ -120,6 +120,13 @@ for (x = 0; x < zoneSplit.length; x++) {
 
 
 //Game check
+var healthTracker = 4;
+if (healthTracker = 0) {
+    alert('You lose!')
+} //else if (healthTracker = 3) {
+    
+//}
+
 function gameCheckA() {
     // console.log(zoneSplit)
     for (x = 0; x < zoneSplit.length; x++) {
@@ -130,6 +137,7 @@ function gameCheckA() {
     
         }
         else {
+            healthTracker -= 1
             document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
@@ -144,207 +152,349 @@ function gameCheckB() {
 
         }
         else {
+            healthTracker -= 1
             document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            console.log(healthTracker)
         }
     }
 }
 function gameCheckC() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('a')) {
-            console.log(zoneSplit.indexOf('a'))
-            wordGuess[zoneSplit.indexOf('a')] = 'a'
+        if (zoneSplit.includes('c')) {
+            console.log(zoneSplit.indexOf('c'))
+            wordGuess[zoneSplit.indexOf('c')] = 'c'
             spellScreen.innerHTML = wordGuess.join('')
 
         }
         else {
+            healthTracker -= 1
             document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckD() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('d')) { console.log(zoneSplit[x]) }
+        if (zoneSplit.includes('d')) {
+            console.log(zoneSplit.indexOf('d'))
+            wordGuess[zoneSplit.indexOf('d')] = 'd'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            healthTracker -= 1
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckE() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('e')) { spellScreen.innerHTML = 'e' }
+        if (zoneSplit.includes('e')) {
+            console.log(zoneSplit.indexOf('e'))
+            wordGuess[zoneSplit.indexOf('e')] = 'e'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            healthTracker -= 1
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckF() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('f')) { console.log(zoneSplit[x]) }
+        if (zoneSplit.includes('f')) {
+            console.log(zoneSplit.indexOf('f'))
+            wordGuess[zoneSplit.indexOf('f')] = 'f'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            healthTracker -= 1
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckG() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('g')) { console.log(zoneSplit[x]) }
+        if (zoneSplit.includes('g')) {
+            console.log(zoneSplit.indexOf('g'))
+            wordGuess[zoneSplit.indexOf('g')] = 'g'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            healthTracker -= 1
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckH() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('h')) { console.log(zoneSplit[x]) }
+        if (zoneSplit.includes('h')) {
+            console.log(zoneSplit.indexOf('h'))
+            wordGuess[zoneSplit.indexOf('h')] = 'h'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            healthTracker -= 1
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
 function gameCheckI() {
     for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('i')) { spellScreen.innerHTML = 'i' }
+        if (zoneSplit.includes('i')) {
+            console.log(zoneSplit.indexOf('i'))
+            wordGuess[zoneSplit.indexOf('i')] = 'i'
+            spellScreen.innerHTML = wordGuess.join('')
+
+        }
         else {
-            alert('No match.')
+            healthTracker -= 1
+            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
         }
     }
 }
-function gameCheckJ() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('j')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckJ() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('j')) {
+                console.log(zoneSplit.indexOf('j'))
+                wordGuess[zoneSplit.indexOf('j')] = 'j'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckK() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('k')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+
+    function gameCheckK() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('k')) {
+                console.log(zoneSplit.indexOf('k'))
+                wordGuess[zoneSplit.indexOf('k')] = 'k'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckL() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('l')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckL() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('l')) {
+                console.log(zoneSplit.indexOf('l'))
+                wordGuess[zoneSplit.indexOf('l')] = 'l'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckM() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('m')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckM() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('m')) {
+                console.log(zoneSplit.indexOf('m'))
+                wordGuess[zoneSplit.indexOf('m')] = 'm'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckN() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('n')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckN() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('n')) {
+                console.log(zoneSplit.indexOf('n'))
+                wordGuess[zoneSplit.indexOf('n')] = 'n'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckO() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('o')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckO() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('o')) {
+                console.log(zoneSplit.indexOf('o'))
+                wordGuess[zoneSplit.indexOf('o')] = 'o'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckP() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('p')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckP() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('p')) {
+                console.log(zoneSplit.indexOf('p'))
+                wordGuess[zoneSplit.indexOf('p')] = 'p'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckQ() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('q')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckQ() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('q')) {
+                console.log(zoneSplit.indexOf('q'))
+                wordGuess[zoneSplit.indexOf('q')] = 'q'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckR() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('r')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckR() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('r')) {
+                console.log(zoneSplit.indexOf('r'))
+                wordGuess[zoneSplit.indexOf('r')] = 'r'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckS() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('s')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckS() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('s')) {
+                console.log(zoneSplit.indexOf('s'))
+                wordGuess[zoneSplit.indexOf('s')] = 's'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckT() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('t')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckT() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('t')) {
+                console.log(zoneSplit.indexOf('t'))
+                wordGuess[zoneSplit.indexOf('t')] = 't'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckU() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('u')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckU() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('u')) {
+                console.log(zoneSplit.indexOf('u'))
+                wordGuess[zoneSplit.indexOf('u')] = 'u'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckV() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('v')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckV() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('v')) {
+                console.log(zoneSplit.indexOf('v'))
+                wordGuess[zoneSplit.indexOf('v')] = 'v'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckW() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('w')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckW() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('w')) {
+                console.log(zoneSplit.indexOf('w'))
+                wordGuess[zoneSplit.indexOf('w')] = 'w'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckX() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('x')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckX() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('x')) {
+                console.log(zoneSplit.indexOf('x'))
+                wordGuess[zoneSplit.indexOf('x')] = 'x'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckY() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('y')) { console.log(zoneSplit[x]) }
-        else {
-            alert('No match.')
+    function gameCheckY() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('y')) {
+                console.log(zoneSplit.indexOf('y'))
+                wordGuess[zoneSplit.indexOf('y')] = 'y'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
-function gameCheckZ() {
-    for (x = 0; x < zoneSplit.length; x++) {
-        if (zoneSplit.includes('z')) { spellScreen.innerHTML = 'z' }
-        else {
-            alert('No match.')
+    function gameCheckZ() {
+        for (x = 0; x < zoneSplit.length; x++) {
+            if (zoneSplit.includes('z')) {
+                console.log(zoneSplit.indexOf('z'))
+                wordGuess[zoneSplit.indexOf('z')] = 'z'
+                spellScreen.innerHTML = wordGuess.join('')
+
+            }
+            else {
+                healthTracker -= 1
+                document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            }
         }
     }
-}
 
 
 
