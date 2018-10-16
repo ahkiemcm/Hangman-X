@@ -70,6 +70,11 @@ body {
     color: #ffffff;
     /* visibility: hidden; */
     font-family: 'press start 2p';
+    margin-left: 500px;
+}
+
+.inner-sigma {
+    padding-top: 200px;
 }
 
 #sigma-challenge {
@@ -80,7 +85,9 @@ body {
     color: #ffffff;
     /* visibility: hidden; */
     display: none;
-    font-family: 'press start 2p'
+    font-family: 'press start 2p';
+    margin: 150px 0px 0px 450px;
+
 }
 
 /* GAME PAGE */
