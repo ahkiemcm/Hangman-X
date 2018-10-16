@@ -140,8 +140,7 @@ function gameCheckA() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -155,9 +154,7 @@ function gameCheckB() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
-            console.log(healthTracker)
+            wrongAnswer()
         }
     }
 }
@@ -170,8 +167,7 @@ function gameCheckC() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -184,8 +180,7 @@ function gameCheckD() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -198,8 +193,7 @@ function gameCheckE() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -212,8 +206,7 @@ function gameCheckF() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -224,10 +217,8 @@ function gameCheckG() {
             wordGuess[zoneSplit.indexOf('g')] = 'g'
             spellScreen.innerHTML = wordGuess.join('')
 
-        }
-        else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+        }else {
+            wrongAnswer()
         }
     }
 }
@@ -240,8 +231,7 @@ function gameCheckH() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -254,8 +244,7 @@ function gameCheckI() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -268,8 +257,7 @@ function gameCheckJ() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -283,8 +271,7 @@ function gameCheckK() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -297,8 +284,7 @@ function gameCheckL() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -311,8 +297,7 @@ function gameCheckM() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -325,8 +310,7 @@ function gameCheckN() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -337,11 +321,8 @@ function gameCheckO() {
             wordGuess[zoneSplit.indexOf('o')] = 'o'
             spellScreen.innerHTML = wordGuess.join('')
         }
-        else if (spellScreen.innerHTML.length != '_') {
-            alert("You win!")
-        } else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+        else {
+            wrongAnswer()
         }
     }
 }
@@ -354,8 +335,7 @@ function gameCheckP() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -368,8 +348,7 @@ function gameCheckQ() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -382,8 +361,7 @@ function gameCheckR() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -396,8 +374,7 @@ function gameCheckS() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -410,8 +387,7 @@ function gameCheckT() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -424,8 +400,7 @@ function gameCheckU() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -438,8 +413,7 @@ function gameCheckV() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -452,8 +426,7 @@ function gameCheckW() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -466,8 +439,7 @@ function gameCheckX() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -480,8 +452,7 @@ function gameCheckY() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -494,8 +465,7 @@ function gameCheckZ() {
 
         }
         else {
-            healthTracker -= 1
-            document.querySelector('#health-bar').style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-wrong1.png')"
+            wrongAnswer()
         }
     }
 }
@@ -505,7 +475,8 @@ function wrongAnswer() {
     if (healthTracker <= 0) {
         console.log(healthTracker)
         health.style.backgroundImage = "url('/HANGMAN-IMG/megaman-healthbar-empty.png')"
-        alert("HUMANITY IS LOST")
+        document.querySelector('#you-lose').style.visibility = 'visible'
+        // alert("HUMANITY IS LOST")
     } else if (healthTracker <= 4) {
         console.log(healthTracker)
         health.style.backgroundImage = "url('HANGMAN-IMG/megaman-healthbar-wrong3.png')"
