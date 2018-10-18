@@ -67,7 +67,10 @@ var catSubjectP = document.querySelectorAll('.inner-list-P')
 var sigmaTalk = document.querySelector('.sigma-monologue')
 var sigmaWalk = document.querySelector('#sigma-walk')
 var sigmaPoint = document.querySelector('#sigma-challenge')
+
 var health = document.querySelector('#health-bar')
+var megaman = document.querySelector('#megaman')
+var sigma = document.querySelector('#sigma')
 
 
 //-------GAME VARIABLES-------//
@@ -102,25 +105,6 @@ for (x = 0; x < zoneSplit.length; x++) {
     wordGuess[x] = '_'
     spellScreen.innerHTML = wordGuess.join(" ")
 }
-// }
-
-//     document.querySelector('#spellScreen').innerHTML = zoneCast
-
-// function gameSetP() {
-//     gameZone = phrases[Math.floor(Math.random() * phrases.length)] //Picks a random word
-//     var zoneSplit = gamezone.split('')   //Splits up the guess phrase and puts it into a new array
-//     document.getElementById('spellScreen').innerHTML = zoneSplit
-// }
-
-//Populate spellZone with gameZone.split() array, visibilty = hidden until revealed on match
-// if (this.childNodes[0].style.visibility == "visible") {
-// this.childNodes[0].style.visibility = "hidden";  //hide item
-//     } else {
-//     this.childNodes[0].style.visibility = "visible";  //show item
-// }
-
-
-
 
 //Game check
 var healthTracker = 16;
@@ -130,6 +114,12 @@ if (healthTracker <= 0) {
 
 //}
 
+function victory() {
+    if (spellScreen.innerHTML != '_') {
+        alert('You win!')
+    } 
+}
+
 function gameCheckA() {
     // console.log(zoneSplit)
     for (x = 0; x < zoneSplit.length; x++) {
@@ -138,8 +128,8 @@ function gameCheckA() {
             wordGuess[zoneSplit.indexOf('a')] = 'a'
             spellScreen.innerHTML = wordGuess.join('')
 
-        }
-        else {
+
+        }else {
             wrongAnswer()
         }
     }
@@ -462,9 +452,11 @@ function gameCheckZ() {
             console.log(zoneSplit.indexOf('z'))
             wordGuess[zoneSplit.indexOf('z')] = 'z'
             spellScreen.innerHTML = wordGuess.join('')
-
+            megaman.style.backgroundImage = "url('/HANGMAN-IMG/megaman-x-sprite-sheet-jump.png')"
+            megaman.style.backgroundRepeat = "no-repeat"            
         }
         else {
+            // megaman.style.backgroundImage = "url(megaman-damage-frame)"
             wrongAnswer()
         }
     }
@@ -490,12 +482,12 @@ function wrongAnswer() {
         console.log(healthTracker)
         health.style.backgroundImage = "url('HANGMAN-IMG/megaman-healthbar-full.png')"
     }
+    megaman.style.backgroundImage = "url('HANGMAN-IMG/megaman-x-sprite-sheet-ready.png')"
 }
 
 
 
 //-------TRANSITIONAL FUNCTIONS-------//
-// modeSelect.style.display = block;
 
 $('#start-game').click(function () {
     $('.title-page').fadeOut()
@@ -514,13 +506,7 @@ $('#nextButton2').click(function () {
     $('.game-page').fadeIn(5000)
 })
 
-// modeSelect.addEventListener('click', function () {
 
-// }
-
-// catSubjectW.addEventListener('click', fuction(){
-//     //We need to hide the title page and reveal the story fragment page.
-// })
 
 
 
