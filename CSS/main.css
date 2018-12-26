@@ -11,7 +11,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
-    display: none;
+    /* display: none; */
 }
 
 #hang-man-x {
@@ -84,10 +84,9 @@ body {
     height: 463px;
     color: #ffffff;
     /* visibility: hidden; */
-    /* display: none; */
+    display: none;
     font-family: 'press start 2p';
     margin: 150px 0px 0px 450px;
-
 }
 
 /* GAME PAGE */
@@ -97,7 +96,7 @@ body {
     width: 1400px;
     height: 788px;
     margin-left: 10px;
-    /* display: none; */
+    display: none;
 }
 
 #health-bar {
@@ -121,7 +120,7 @@ body {
 }
 
 .sprite-act {
-    margin-top: -100px 
+    margin-top: -100px
 }
 
 #megaman {
@@ -145,7 +144,6 @@ body {
     margin-left: 390px;
     margin-bottom: -200px;
     /* padding:  */
-
 }
 
 #you-win {
