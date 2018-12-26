@@ -115,10 +115,9 @@ if (healthTracker <= 0) {
 //}
 
 function victory() {
-    if (spellScreen.innerHTML !== '_') {
+    if (spellScreen.innerHTML != '_') {
         alert('You win!')
-        console.log('You win?')
-    }
+    } 
 }
 
 function gameCheckA() {
@@ -128,7 +127,9 @@ function gameCheckA() {
             console.log(zoneSplit.indexOf('a'))
             wordGuess[zoneSplit.indexOf('a')] = 'a'
             spellScreen.innerHTML = wordGuess.join('')
-        } else {
+
+
+        }else {
             wrongAnswer()
         }
     }
@@ -206,7 +207,7 @@ function gameCheckG() {
             wordGuess[zoneSplit.indexOf('g')] = 'g'
             spellScreen.innerHTML = wordGuess.join('')
 
-        } else {
+        }else {
             wrongAnswer()
         }
     }
@@ -452,10 +453,10 @@ function gameCheckZ() {
             wordGuess[zoneSplit.indexOf('z')] = 'z'
             spellScreen.innerHTML = wordGuess.join('')
             megaman.style.backgroundImage = "url('/HANGMAN-IMG/megaman-x-sprite-sheet-jump.png')"
-            megaman.style.backgroundRepeat = "no-repeat"
+            megaman.style.backgroundRepeat = "no-repeat"            
         }
         else {
-            // megaman.style.backgroundImage = "url('/HANGMAN-IMG/megaman-x-sprite-sheet-jump.png')"
+            // megaman.style.backgroundImage = "url(megaman-damage-frame)"
             wrongAnswer()
         }
     }
