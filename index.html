@@ -1,34 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hang Man X</title>
-    <link rel="stylesheet" href="/CSS/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Hang Man X</title>
+     <link rel="stylesheet" href="/CSS/main.css">
+     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+ </head>
 
-<!-- Alright, X. We're making a hangman game. We need to start off by planning. -->
-<!-- Let's pseudocode through the project as we gather information -->
+ <!-- Alright, X. We're making a hangman game. We need to start off by planning. -->
+ <!-- Let's pseudocode through the project as we gather information -->
 
-<!-- Now if I'm not mistaken, if we want to hide our pages as a portion of the same html file
+ <!-- Now if I'm not mistaken, if we want to hide our pages as a portion of the same html file
 we are going to need either a div or a section to target -->
 
-<body>
-    <!-- Title at top of page -->
-    <div class="title-page">
-        <img id="hang-man-x" src="/HANGMAN-IMG/Hang-Man-X.png" alt="Hangman X">
+ <body>
+     <!-- Title at top of page -->
+     <div class="title-page">
+         <img id="hang-man-x" src="/HANGMAN-IMG/Hang-Man-X.png" alt="Hangman X">
 
-        <div class="mega-sprite">
-            <!-- Image in CSS -->
-        </div>
+         <div class="mega-sprite">
+             <!-- Image in CSS -->
+         </div>
 
-        <div class="game-start">
-            <h2 id='start-game'> Start Game</h2>
-            <!--Onclick: reveal list-->
-            <!-- <ul>
+         <div class="game-start">
+             <h2 id='start-game'> Start Game</h2>
+             <!--Onclick: reveal list-->
+             <!-- <ul>
                 <li class="outer-list" id="wordList">Words</li>
                 <ul>
                     <li class="inner-list-W">Megaman</li>
@@ -38,154 +38,154 @@ we are going to need either a div or a section to target -->
                     <li class='inner-list-P' onclick="gameSetP()">Megaman</li>
                 </ul>
             </ul> -->
-        </div>
-    </div>
+         </div>
+     </div>
 
-    <div class="sigma-monologue">
-        <div id="sigma-walk">
-            <!-- Image in CSS -->
-            <div class="inner-sigma">
-                <p>I have removed keywords from mankind's reality. Without them, the feeble-minded humans cannot
-                    communicate!</p>
-                <button type="button" id="nextButton1">NEXT --></button>
-            </div>
-        </div>
+     <div class="sigma-monologue">
+         <div id="sigma-walk">
+             <!-- Image in CSS -->
+             <div class="inner-sigma">
+                 <p>I have removed keywords from mankind's reality. Without them, the feeble-minded humans cannot
+                     communicate!</p>
+                 <button type="button" id="nextButton1">NEXT --></button>
+             </div>
+         </div>
 
-        <div id="sigma-challenge">
-            <!-- Image in CSS -->
-            <div class="inner-sigma">
-                <p>They will be powerless, and you are powerless to stop me!</p>
-                <button type="button" id="nextButton2">NEXT --></button>
-            </div>
-        </div>
-    </div>
+         <div id="sigma-challenge">
+             <!-- Image in CSS -->
+             <div class="inner-sigma">
+                 <p>They will be powerless, and you are powerless to stop me!</p>
+                 <button type="button" id="nextButton2">NEXT --></button>
+             </div>
+         </div>
+     </div>
 
-    <div class="game-page">
-        <!-- BG Image in CSS -->
-        <div class="game-display">
-            <div id="health-bar">
-                <!-- Image in CSS -->
-            </div>
-            <p class="category">
-                <!-- Populate through javascript -->
-            </p>
+     <div class="game-page">
+         <!-- BG Image in CSS -->
+         <div class="game-display">
+             <div id="health-bar">
+                 <!-- Image in CSS -->
+             </div>
+             <p class="category">
+                 <!-- Populate through javascript -->
+             </p>
 
-            <div class="spellZone">
-                <!-- We've gotta figure out how we're gonna get words to print in here...
+             <div class="spellZone">
+                 <!-- We've gotta figure out how we're gonna get words to print in here...
                 Hide and reveal characters...
                 Letters have to be matched to a div for that to work, and have to pull from an array right?
                 Research the logic here... -->
-                <!-- This div will be super long no doubt. Examples have taught us this. -->
-                <h1 id="spellScreen"></h1>
-            </div>
+                 <!-- This div will be super long no doubt. Examples have taught us this. -->
+                 <h1 id="spellScreen"></h1>
+             </div>
 
-            <div class="contest">
-                <img src="/HANGMAN-IMG/YOU-LOSE.png" alt="you-lose" id="you-lose">
-                <img src="/HANGMAN-IMG/YOU-WIN.png" alt="you-win" id="you-win">
-            </div>
-        </div>
+             <div class="contest">
+                 <img src="/HANGMAN-IMG/YOU-LOSE.png" alt="you-lose" id="you-lose">
+                 <img src="/HANGMAN-IMG/YOU-WIN.png" alt="you-win" id="you-win">
+             </div>
+         </div>
 
-        <div class="sprite-act" id="megaman">
-            <!-- Image in CSS -->
-        </div>
+         <div class="sprite-act" id="megaman">
+             <!-- Image in CSS -->
+         </div>
 
-        <div class="sprite-act" id="sigma">
-            <!-- Image in CSS -->
-        </div>
+         <div class="sprite-act" id="sigma">
+             <!-- Image in CSS -->
+         </div>
 
-        <div class="buttonTable">
-            <table>
-                <tr>
-                    <td>
-                        <button type="button" class="alphabet" value="A" onclick='gameCheckA()'>A</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="B" onclick='gameCheckB()'>B</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="C" onclick='gameCheckC()'>C</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="D" onclick='gameCheckD()'>D</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="E" onclick="gameCheckE()">E</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="F" onclick='gameCheckF()'>F</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="G" onclick='gameCheckG()'>G</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="H" onclick='gameCheckH()'>H</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="I" onclick='gameCheckI()'>I</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="J" onclick='gameCheckJ()'>J</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="K" onclick='gameCheckK()'>K</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="L" onclick='gameCheckL()'>L</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="M" onclick='gameCheckM()'>M</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="button" class="alphabet" value="N" onclick='gameCheckN()'>N</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="O" onclick='gameCheckO()'>O</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="P" onclick='gameCheckP()'>P</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="Q" onclick='gameCheckQ()'>Q</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="R" onclick='gameCheckR()'>R</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="S" onclick='gameCheckS()'>S</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="T" onclick='gameCheckT()'>T</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="U" onclick='gameCheckU()'>U</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="V" onclick='gameCheckV()'>V</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="W" onclick='gameCheckW()'>W</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="X" onclick='gameCheckX()'>X</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="Y" onclick='gameCheckY()'>Y</button>
-                    </td>
-                    <td>
-                        <button type="button" class="alphabet" value="Z" onclick='gameCheckZ()'>Z</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
+         <div class="buttonTable">
+             <table>
+                 <tr>
+                     <td>
+                         <button type="button" class="alphabet" value="A">A</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="B">B</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="C">C</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="D">D</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="E">E</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="F">F</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="G">G</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="H">H</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="I">I</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="J">J</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="K">K</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="L">L</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="M">M</button>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <button type="button" class="alphabet" value="N">N</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="O">O</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="P">P</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="Q">Q</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="R">R</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="S">S</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="T">T</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="U">U</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="V">V</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="W">W</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="X">X</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="Y">Y</button>
+                     </td>
+                     <td>
+                         <button type="button" class="alphabet" value="Z">Z</button>
+                     </td>
+                 </tr>
+             </table>
+         </div>
+     </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="/JS/app.js"></script>
-</body>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <script src="/JS/app.js"></script>
+ </body>
 
-</html>
+ </html>
