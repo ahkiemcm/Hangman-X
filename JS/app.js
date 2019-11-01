@@ -164,14 +164,30 @@ function wrongAnswer() {
 // }
 
 // //FOR EACH ATTEMPT
-letterPool.forEach(function(button, x) {
-  button.addEventListener("click", function gameCheck() {
-    console.log(x, button.value);
+// letterPool.forEach(function(button, x) {
+//   button.addEventListener("click", function gameCheck() {
+//     console.log(x, button.value);
+//     // console.log(wordGuess);
+//     if (zoneSplit.includes(button.value)) {
+//       // console.log("That's in there");
+//       wordGuess[zoneSplit.indexOf(button.value)] = button.value;
+//       console.log(wordGuess);
+//       spellScreen.innerHTML = wordGuess.join("");
+//     } else {
+//       console.log("Does not include");
+//     }
+//   });
+// });
 
-    if (zoneSplit.includes(button.value)) {
-      console.log("That's in there");
-    } else {
-      console.log("Does not include");
+//FOR EACH w/RegEx
+letterPool.forEach(function(button, x) {
+  button.addEventListener("click", function gameCheck(letter) {
+    console.log(x, button.value);
+    var regEx = new RegExp(letter, "ig");
+
+    var match;
+    while (null != (match = regEx.exec(gameZone))) {
+      console.log(match);
     }
   });
 });
