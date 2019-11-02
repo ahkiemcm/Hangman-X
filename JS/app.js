@@ -122,28 +122,28 @@ function wrongAnswer() {
   if (healthTracker <= 0) {
     console.log(healthTracker);
     health.style.backgroundImage =
-      "url('/HANGMAN-IMG/megaman-healthbar-empty.png')";
+      "url('/HANGMAN-IMG/Healthbar/megaman-healthbar-empty.png')";
     document.querySelector("#you-lose").style.visibility = "visible";
     // alert("HUMANITY IS LOST")
   } else if (healthTracker <= 4) {
     console.log(healthTracker);
     health.style.backgroundImage =
-      "url('HANGMAN-IMG/megaman-healthbar-wrong3.png')";
+      "url('HANGMAN-IMG/Healthbar/megaman-healthbar-wrong3.png')";
   } else if (healthTracker <= 8) {
     console.log(healthTracker);
     health.style.backgroundImage =
-      "url('HANGMAN-IMG/megaman-healthbar-wrong2.png')";
+      "url('HANGMAN-IMG/Healthbar/megaman-healthbar-wrong2.png')";
   } else if (healthTracker <= 12) {
     console.log(healthTracker);
     health.style.backgroundImage =
-      "url('HANGMAN-IMG/megaman-healthbar-wrong1.png')";
+      "url('HANGMAN-IMG/Healthbar/megaman-healthbar-wrong1.png')";
   } else {
     console.log(healthTracker);
     health.style.backgroundImage =
-      "url('HANGMAN-IMG/megaman-healthbar-full.png')";
+      "url('HANGMAN-IMG/Healthbar/megaman-healthbar-full.png')";
   }
   megaman.style.backgroundImage =
-    "url('HANGMAN-IMG/megaman-x-sprite-sheet-ready.png')";
+    "url('HANGMAN-IMG/Healthbar/megaman-x-ready.png')";
 }
 
 //----GAMEBOARD----//
