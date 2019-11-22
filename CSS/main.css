@@ -11,7 +11,7 @@ body {
     color: #ffffff;
     width: cover;
     height: 720px;
-    /* display: none; */
+    display: none;
 }
 
 #hang-man-x {
@@ -93,10 +93,12 @@ body {
 
 .game-page {
     background: url(/HANGMAN-IMG/bg/destroyed-city.png) no-repeat;
-    width: 1400px;
-    height: 788px;
+    /* width: 1400px;
+    height: 788px; */
+    width: 100%;
+    height: 50%;
     margin-left: 10px;
-    display: none;
+    /* display: none; */
 }
 
 #health-bar {
@@ -113,6 +115,7 @@ body {
     border: solid black;
     margin-top: -250px;
     margin-left: 280px;
+    /* padding-bottom: -11000px; */
 }
 
 #spellScreen {
